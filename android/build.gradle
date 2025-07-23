@@ -36,6 +36,14 @@ android {
         minSdkVersion 29
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    kotlinOptions {
+        jvmTarget = '11'                       // Updated to match your app
+    }
+    // You might need to add this if it's not already there
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
     lintOptions {
         disable 'InvalidPackage'
     }
